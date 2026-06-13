@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,500;1,100&family=Montserrat:wght@300;500;700&family=Poppins:wght@200;400;500;600;700&display=swap');
+  
+.leyar{
+    background-color: rgba(0, 0, 0, 0.626);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+ }  
+:root{
+    --mainColor:#00c3da  
+}
+h1{
+ font-family: 'Poppins', sans-serif; 
+font-weight: bolder;
+font-size: 100px;
+}
+h2{
+    font-family: 'Poppins', sans-serif; 
+    font-weight: bolder;
+    font-size: 40px;
+}
+h4{
+font-family: 'Poppins', sans-serif;
+font-size: 18px;
+}
+h6{
+ font-family: 'Poppins', sans-serif;
+ font-size: 13px;  
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+ul{
+    list-style: none;
+}
+/* home */
+.play{
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border: solid 3px black;
+    position: absolute;
+    top: 50%;
+    left: 0;  
+}
+.playTwo{
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border: solid 3px black;
+    position: absolute;
+    top: 55%;
+    left: 0;  
+}
+.botunsAll .btn-one{
+    border: solid 1px transparent ;
+    background-color: var(--mainColor) ;
+    width: 25%;
+    transition: all .5s;
+}
+.botunsAll .btn-one:hover{
+    border: solid 1px transparent ;
+    background-color: #43E0F2  ;  
+}
+
+.botunsAll .btn-two{
+    border: solid 1px white;
+    transition: all .5s;
+}
+.botunsAll .btn-two:hover a{
+    color: black;
+}
+.botunsAll .btn-two:hover{
+    background-color: white;
+}
+/* about */
+.about-text{
+    color: #787878;
+    font-weight: 300;
+    font-size: 20px;
+}
+.about-text .btn{
+    border: solid 1px rgba(0, 0, 0, 0.345);
+    font-size: 13px;
+    padding: 15px;
+
+}
+.about-text .btn:hover{
+    background-color: black;
+}
+.about-text .apps::before{
+    content: "";
+    animation-name: web;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    color: var(--mainColor);
+    font-size: 25px;
+    font-weight: 400;
+}
+@keyframes web {
+    0%{content:  "|"}
+    2%{content: "a|" }
+    4%{content: "ap|"}
+    6%{content: "app|"}
+    8%{content: "apps|"}
+    10%{content: "app|"}
+    12%{content: "ap|"}
+    14%{content: "a|"}
+    18%{content: "|"}
+    20%{content: "w|"}
+    22%{content: "we|"}
+    24%{content: "web|"}
+    26%{content: "webs|"}
+    28%{content: "websi|"}
+    30%{content: "websit|"}
+    32%{content: "website|"}
+    34%{content: "websites|"}
+    36%{content: "website|"}
+    38%{content: "websit|"}
+    40%{content: "websi|"}
+    42%{content: "webs|"}
+    44%{content: "web|"}
+    46%{content: "we|"}
+    48%{content: "w|"}
+    52%{content: "|"}
+    54%{content: "s|"}
+    56%{content: "so|"}
+    58%{content: "sof|"}
+    60%{content: "soft|"}
+    62%{content: "softw|"}
+    64%{content: "softwa|"}
+    66%{content: "softwar|"}
+    68%{content: "software|"}
+    70%{content: "softwares|"}
+    70%{content: "software|"}
+    74%{content: "softwar|"}
+    76%{content: "softwa|"}
+    78%{content: "softw|"}
+    80%{content: "soft|"}
+    82%{content: "sof|"}
+    84%{content: "so|"}
+    86%{content: "s|"}
+    100%{content: "|"}
+}
+/* team */
+.pic-item{
+    background-color:#43e0f2c5;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    transform: translatey(20px );
+    opacity: 0;
+    transition: all .5s   ;
+}
+.pic:hover .pic-item  {
+    transform: translatey( 0% );
+    opacity: 1;      
+}
+.text-leyar h1{
+    position: absolute;
+}
+/* service */
+.service-bg{
+    background-color:#626262;
+}
+/* pricing */
+.bg-gray{
+    background-color: #f7f7f7;
+}
+.pricing-card{
+    box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.149) ;
+    transition: all .5s;
+}
+.pricing-card:hover {
+    box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.338);
+}
+.pricing-card .card-text{
+    color: #787878;
+}
+.pricing-card .card-title{
+    font-size: 65px;
+    font-weight: 500;
+}
+.card-btn{
+    border: solid 1px transparent;
+    background-color: var(--mainColor);
+    transition: all .5s; 
+}
+.card-btn:hover{
+    background-color: #43E0F2;
+}
+.golden{
+    color: var(--mainColor);
+}
+.golden-best{
+    border: solid 1px transparent;
+   background-color: var(--mainColor);
+
+}
+.line{
+    width: 75%;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.145);
+    margin: auto;
+}
+/* carposel style */
+.C-photo{
+    width: 15% ;
+}
+.my-item img{
+    transform: translatey(-50%);
+}
+.C-item .carousel-indicators [data-bs-target]{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--mainColor);   
+}
+.carousel-control-prev-icon{
+    background-image: url(../img/images.png);
+    transform: rotate(180deg);
+}
+.carousel-control-next-icon{
+    background-image: url(../img/images.png);
+}
+.g h1{
+    transform: translatey(-40%);
+    font-size: 80px;
+}
+.btn-form{
+    background-color: var(--mainColor);
+    transition: all .5s;
+}
+.btn-form:hover{
+    background-color:#43E0F2;
+}
+.map-wedth{
+    width: 100%;
+    height: 700px;
+}
